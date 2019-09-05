@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Country-city ver4">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" >
+  <title>Ország, főváros</title>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Ország - főváros játék</h1>
+    </div>
+  </header>
+  <main onload="init()">
+    <div id="ask"></div>
+    <form name="gameForm" onsubmit="askQuestion(); return false">
+      <input type="text" id="answer" value=" ">
+      <input type="Submit" value="OK" onclick="checkAnswer()">
+      <input type="Reset" value="Mégsem" onClick="bye()">
+    </form>
+    <div id="line"></div>
+    <div>
+      <div id="goodAnswer"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <small>©2019 <strong>Kónya Noémi Tímea</strong>, All Rights Reserved</small>
+    </div>
+  </footer>
+
+  <script src="game.js" type="text/javascript"></script>
+
+</body>
+</html>
